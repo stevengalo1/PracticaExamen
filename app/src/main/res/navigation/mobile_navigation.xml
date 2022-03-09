@@ -3,13 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
+    android:label="@string/msg_pais_update"
     app:startDestination="@+id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
         android:name="com.practicaexamen.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_addPlaneta"
+            app:destination="@id/nav_addPlaneta" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_updatePlaneta"
+            app:destination="@id/nav_updatePlaneta" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +30,26 @@
         android:name="com.practicaexamen.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_addPlaneta"
+        android:name="com.practicaexamen.ui.home.addPlanetaFragment"
+        android:label="fragment_add_lugar"
+        tools:layout="@layout/fragment_add_planeta">
+        <action
+            android:id="@+id/action_addPlaneta_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_updatePlaneta"
+        android:name="com.practicaexamen.ui.home.UpdatePlanetaFragment"
+        android:label="fragment_update_planeta"
+        tools:layout="@layout/fragment_update_planeta">
+        <argument
+            android:name="planeta"
+            app:argType="com.practicaexamen.model.Planeta" />
+        <action
+            android:id="@+id/action_nav_updatePlaneta_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
 </navigation>
