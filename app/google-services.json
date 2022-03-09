@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "548939459856",
+    "project_id": "practicaexamen-df5cd",
+    "storage_bucket": "practicaexamen-df5cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548939459856:android:260e4f7422e29a65c14995",
+        "android_client_info": {
+          "package_name": "com.practicaexamen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548939459856-g28cs143d1nbb3g4hl33b6cr1uta6948.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlDbeBiK4S-gVh5PtPvR7n4Jy6iz32nEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548939459856-g28cs143d1nbb3g4hl33b6cr1uta6948.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
